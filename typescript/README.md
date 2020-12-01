@@ -1,2 +1,2 @@
 # TypeScript
-Repasando uso de TS
+Repasando el uso de TS
