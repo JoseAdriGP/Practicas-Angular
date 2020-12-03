@@ -26,7 +26,35 @@
                     <th>lowercase</th>
                     <th>{{nombre | lowercase}}</th>
                 </tr>
+                <tr>
+                    <th>
+                        {{nombre}}
+                    </th>
+                    <th>slice:3</th>
+                    <th>{{nombre | slice:3}}</th>
+                </tr>
+                <tr>
+                    <th>
+                        {{nombre}}
+                    </th>
+                    <th>slice:0:3</th>
+                    <th>{{nombre | slice:0:3}}</th>
+                </tr>
+                <tr>
+                    <th>
+                        {{arreglo}}
+                    </th>
+                    <th>slice:1:5</th>
+                    <th>{{arreglo | slice:1:5}}</th>
+                </tr>
             </tbody>
         </table>
+
+        <h4>Slice</h4>
+        <ul>
+            <li *ngFor="let item of arreglo | slice:3:6">
+                {{item}}
+            </li>
+        </ul>>
     </div>
 </div>
