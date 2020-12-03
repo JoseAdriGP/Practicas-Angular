@@ -14,4 +14,6 @@ export class AppComponent {
   PI: number = Math.PI;
 
   porcentage: number = 0.234;
+
+  salario: number = 1234.5;
 }

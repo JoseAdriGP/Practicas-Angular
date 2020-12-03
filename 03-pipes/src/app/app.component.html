@@ -96,6 +96,27 @@
                     <th>percent</th>
                     <th>{{porcentage | percent:'2.2-2'}}</th>
                 </tr>
+                <tr>
+                    <th>
+                        {{salario}}
+                    </th>
+                    <th>currency</th>
+                    <th>{{salario | currency}}</th>
+                </tr>
+                <tr>
+                    <th>
+                        {{salario}}
+                    </th>
+                    <th>currency:'EUR'</th>
+                    <th>{{salario | currency:'EUR'}}</th>
+                </tr>
+                <tr>
+                    <th>
+                        {{salario}}
+                    </th>
+                    <th>currency:'CAD':'symbol-narrow':'.0-0'</th>
+                    <th>{{salario | currency:'CAD':'symbol-narrow':'.0-0'}}</th>
+                </tr>
             </tbody>
         </table>
 
