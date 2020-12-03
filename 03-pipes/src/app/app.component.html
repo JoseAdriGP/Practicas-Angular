@@ -75,6 +75,27 @@
                     <th>number:'.0-0'</th>
                     <th>{{PI | number:'.0-0'}}</th>
                 </tr>
+                <tr>
+                    <th>
+                        {{porcentage}}
+                    </th>
+                    <th>percent</th>
+                    <th>{{porcentage | percent}}</th>
+                </tr>
+                <tr>
+                    <th>
+                        {{porcentage + 0.004}}
+                    </th>
+                    <th>percent</th>
+                    <th>{{porcentage + 0.004 | percent}}</th>
+                </tr>
+                <tr>
+                    <th>
+                        {{porcentage}}
+                    </th>
+                    <th>percent</th>
+                    <th>{{porcentage | percent:'2.2-2'}}</th>
+                </tr>
             </tbody>
         </table>
 
