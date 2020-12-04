@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'pipes';
   nombre: string = 'Capitán América';
+  nombre2: string = 'AdRIÁN garridO';
   arreglo = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   PI: number = Math.PI;
   porcentage: number = 0.234;

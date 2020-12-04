@@ -1,6 +1,11 @@
 <h1 class="mt-3">Pipes <small>Angular</small></h1>
 <hr>
 
+<h5>
+    Para crear pipes personalizados debemos usar la orden en consola: <small>ng g p pipes/nombrePipe</small>
+</h5>
+<hr>
+
 <div class="row">
     <div class="col">
         <table class="table">
@@ -39,6 +44,20 @@
                     </th>
                     <th>slice:0:3</th>
                     <th>{{nombre | slice:0:3}}</th>
+                </tr>
+                <tr>
+                    <th>
+                        {{nombre2}}
+                    </th>
+                    <th>pipePersonalizado</th>
+                    <th>{{nombre2 | pipePersonalizado}}</th>
+                </tr>
+                <tr>
+                    <th>
+                        {{nombre2}}
+                    </th>
+                    <th>pipePersonalizado:false</th>
+                    <th>{{nombre2 | pipePersonalizado:false}}</th>
                 </tr>
                 <tr>
                     <th>

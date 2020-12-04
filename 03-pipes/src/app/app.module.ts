@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { registerLocaleData } from '@angular/common';
 import  localeEs  from '@angular/common/locales/es';
 import  localeFr  from '@angular/common/locales/fr';
+import { PipePersonalizadoPipe } from './pipes/pipe-personalizado.pipe';
 
 
 registerLocaleData(localeEs);
@@ -13,7 +14,8 @@ registerLocaleData(localeFr);
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PipePersonalizadoPipe
   ],
   imports: [
     BrowserModule
