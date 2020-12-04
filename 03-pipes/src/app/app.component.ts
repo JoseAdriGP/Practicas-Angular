@@ -14,6 +14,7 @@ export class AppComponent {
   porcentage: number = 0.234;
   salario: number = 1234.5;
   fecha: Date = new Date();
+  activar: boolean = true;
 
   idioma: string = 'es';
 
