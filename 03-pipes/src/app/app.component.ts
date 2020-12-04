@@ -14,6 +14,8 @@ export class AppComponent {
   salario: number = 1234.5;
   fecha: Date = new Date();
 
+  idioma: string = 'es';
+
   valorPromesa = new Promise<string>( (resolve) => {
     setTimeout( () => {
       resolve('Llegó la data');
@@ -29,4 +31,5 @@ export class AppComponent {
       casa: 20
     }
   }
+
 }

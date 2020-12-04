@@ -159,6 +159,33 @@
                     <th>date:'MMMM - dd'</th>
                     <th>{{fecha | date:'MMMM - dd'}}</th>
                 </tr>
+                <tr>
+                    <th>
+                        {{fecha}}
+                    </th>
+                    <th>date:'MMMM - dd':'':'en'</th>
+                    <th>{{fecha | date:'MMMM - dd':'':'en'}}</th>
+                </tr>
+                <tr>
+                    <th>
+                        {{fecha}}
+                    </th>
+                    <th>date:'MMMM - dd':'':'fr'</th>
+                    <th>{{fecha | date:'MMMM - dd':'':'fr'}}</th>
+                </tr>
+                <tr>
+                    <th>
+                        {{fecha}}
+                    </th>
+                    <th>
+                        date:'MMMM - dd':'':'{{idioma}}'
+                        <br>
+                        <button (click)="idioma = 'es'" class="mr-1 btn btn-primary"> Español </button>
+                        <button (click)="idioma = 'en'" class="mr-1 btn btn-secondary"> Inglés </button>
+                        <button (click)="idioma = 'fr'" class="mr-1 btn btn-success"> Francés </button>
+                    </th>
+                    <th>{{fecha | date:'MMMM - dd':'':idioma}}</th>
+                </tr>
             </tbody>
         </table>
 
