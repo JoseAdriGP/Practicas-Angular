@@ -21,6 +21,11 @@ export class DeseosService {
     return nuevaLista.id;
   }
 
+  borrarLista( lista: Lista ) {
+    this.listas = this.listas.filter( listaData => listaData.id !== lista.id );
+    this.guardarStorage();
+  }
+
   obtenerLista( id: string | number ) {
     id = Number(id);
 
@@ -31,11 +36,13 @@ export class DeseosService {
     localStorage.setItem( 'data', JSON.stringify(this.listas) );
   }
   
-  cargarStorage(){
+  cargarStorage() {
     if( localStorage.getItem('data') ) {
       this.listas = JSON.parse( localStorage.getItem('data') );
+    }else{
+      this.listas = [];
     }
-    
+
   }
 
 }
